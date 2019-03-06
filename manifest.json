@@ -1,0 +1,30 @@
+{
+	"name": "Block3r",
+	"version": "1.0",
+	"description": "Block sites you don't want to see!",
+	"permissions": ["tabs", "webRequest", "webRequestBlocking", "*://*/*", "activeTab", "declarativeContent", "storage"],
+	"options_page": "options.html",
+	"web_accessible_resources": [
+		"redirect.html"
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/get_started16.png",
+			"32": "images/get_started32.png",
+			"48": "images/get_started48.png",
+			"128": "images/get_started128.png"
+		}
+	},
+	"icons": {
+			"16": "images/get_started16.png",
+			"32": "images/get_started32.png",
+			"48": "images/get_started48.png",
+			"128": "images/get_started128.png"
+	},
+	"manifest_version": 2
+}
